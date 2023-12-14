@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-
+import './loginPage.css'
 const img = [
     "https://img.freepik.com/free-photo/beautiful_1203-2633.jpg?w=900&t=st=1702463786~exp=1702464386~hmac=8b390584d2a608e666c06e73a7f5d70a05fdcda52cb13b72880af527c7a2bb0d",
     "https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=900&t=st=1702462365~exp=1702462965~hmac=3f2e4be8a0f342c2d091fdae58abac605ac7422857614f02c930c8d7aa7b03b8",
@@ -26,13 +26,12 @@ function LoginPage(){
         <div className="images" onLoad={changeImg()} >
             <img src={imgsrc} alt="pic"  />
             <div className='loginForm'>
-            <h3>Welcome back, Traveller!</h3>
-            <form>
-                <input type="email" placeholder="Enter email" /><br /><br />
-                <input type="password" placeholder="Enter password" /><br /><br />
-                <Link to="/"><button type="submit">Login</button></Link>
-            </form>
-            <Link to="SignupPage"><p>Don't have an account? Sign Up </p></Link>
+                <h3>Welcome back, Traveller!</h3>
+                <form>
+                    <input type="email" placeholder="Enter email" /><br /><br />
+                    <input type="password" placeholder="Enter password" /><br /><br />
+                    <Link to="/"><button type="submit">Login</button></Link>
+                </form>
             </div>
         </div>
     );

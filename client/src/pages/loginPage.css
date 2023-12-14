@@ -1,0 +1,34 @@
+.images img{
+  max-width: 60%;
+}
+.images{
+  padding: 2%;
+  display: flex;
+  margin: 2% 3%;
+  padding-bottom: 2%;
+}
+ .loginForm{
+  padding: 10em;
+  text-align: center;
+  box-shadow: -7px 0px 10px rgba(0, 0, 0, 0.6) ;
+  background-color: white;
+ }
+ .loginForm input{
+  width: 180%;
+  padding: 15px;
+  margin-left: -45%;
+  border: 1px groove #f1f1f1 ;
+  border-radius: 10px;
+ }
+
+ .loginForm button{
+  width: 70%;
+  padding: 15px;
+  border: 2px outset #f1f1f1;
+  border-radius: 7px;
+  background-image: linear-gradient(to bottom left,  #4568dc, #b06ab3);;
+ }
+
+ .loginForm button:hover {
+  opacity: 0.8;
+}

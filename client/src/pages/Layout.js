@@ -8,6 +8,7 @@ function Layout(){
                 <Link to="/"><img src={logo} alt="logo" width={210}  height={90} /></Link>
                 <ul>
                     <li><Link id="link" to="/LoginPage">Login</Link></li>
+                    <li><Link id="link1" to="/SignupPage">Sign up</Link></li>
                 </ul>
             </nav>
 

@@ -1,7 +1,13 @@
 function SignupPage(){
     return(
-        <div>
-
+        <div className="signupForm">
+            <form>
+                <input />
+                <input />
+                <input />
+                <input />
+                <input />
+            </form>
         </div>
     );
 }

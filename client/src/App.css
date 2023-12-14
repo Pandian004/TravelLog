@@ -2,7 +2,7 @@ nav{
   background-color: #333;
 }
 
-#link{
+#link,#link1{
   color: #f1f1f1;
   text-decoration: none;
   
@@ -12,6 +12,8 @@ ul{
   list-style: none;
   padding: 20px;
   float: right;
+  display: flex;
+  gap: 20px;
 }
 
 body{
@@ -43,37 +45,4 @@ img{
   text-align: center;
 }
 
-.images img{
-  max-width: 60%;
-}
-.images{
-  padding: 2%;
-  display: flex;
-  margin-left: 3%;
-  padding-bottom: 2%;
-}
- .loginForm{
-  background-color: white;
-  padding: 10em;
-  text-align: center;
-  box-shadow: -7px 0px 10px rgba(0, 0, 0, 0.6) ;
- }
- .loginForm input{
-  width: 180%;
-  padding: 15px;
-  margin-left: -45%;
-  border: 1px groove #f1f1f1 ;
-  border-radius: 10px;
- }
 
- .loginForm button{
-  width: 70%;
-  padding: 10px;
-  border: 2px outset #f1f1f1;
-  border-radius: 7px;
-  background-color: #00cc66 ;
- }
-
- .loginForm button:hover {
-  opacity: 0.8;
-}
