@@ -32,6 +32,7 @@ function LoginPage(){
                 <input type="password" placeholder="Enter password" /><br /><br />
                 <Link to="/"><button type="submit">Login</button></Link>
             </form>
+            <Link to="SignupPage"><p>Don't have an account? Sign Up </p></Link>
             </div>
         </div>
     );
