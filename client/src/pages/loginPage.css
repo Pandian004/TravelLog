@@ -31,7 +31,7 @@
   padding: 15px;
   border: 2px outset #f1f1f1;
   border-radius: 7px;
-  background-image: linear-gradient(to bottom left,  #4568dc, #b06ab3);;
+  background-image: linear-gradient(to bottom left,  #4568dc, #b06ab3);
  }
 
  .loginForm button:hover {
