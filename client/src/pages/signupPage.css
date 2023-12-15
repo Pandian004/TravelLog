@@ -1,0 +1,35 @@
+.signupForm img{
+    height: 100vh;
+    width: 60%;
+    
+}
+
+.signupForm{
+    display: flex;
+}
+
+.form{
+    background-color:white;
+    box-shadow: -7px 0px 10px rgba(0, 0, 0, 0.6) ;
+    padding: 10%;
+    text-align: center;
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/playstation-pattern.png);
+}
+
+.form input{
+    width: 360px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.form button{
+    width: 380px;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #00d2ff,#3a7bd5);
+    border: 2px outset #f1f1f1;
+}
+
+.form button:hover{
+    opacity: 0.8;
+}
