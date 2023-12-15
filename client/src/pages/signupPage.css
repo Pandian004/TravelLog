@@ -13,23 +13,27 @@
     box-shadow: -7px 0px 10px rgba(0, 0, 0, 0.6) ;
     padding: 10%;
     text-align: center;
-    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/playstation-pattern.png);
+    background-image: url("../../newAsserts/gplaypattern.png");
 }
 
 .form input{
     width: 360px;
     padding: 10px;
     border-radius: 10px;
-    border: none;
+    border: 1px groove #f1f1f1 ;
 }
 .form button{
     width: 380px;
     padding: 10px;
     border-radius: 10px;
-    background-image: linear-gradient(to bottom right, #00d2ff,#3a7bd5);
+    background-image: linear-gradient(to bottom left, #00d2ff,#3a7bd5);
     border: 2px outset #f1f1f1;
 }
 
 .form button:hover{
     opacity: 0.8;
 }
+
+#copy{
+    color: inherit;
+  }

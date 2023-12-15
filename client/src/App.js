@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Profile from './pages/Profile';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
           <Route path='SignupPage' element={<SignupPage />} />
         </Routes>
       </header>
+      
     </div>
   );
 }

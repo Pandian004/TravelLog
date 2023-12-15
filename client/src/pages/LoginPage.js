@@ -21,6 +21,9 @@ let imgsrc;
  function changeImg(){
    imgsrc = img[Math.floor(Math.random()*img.length)];
  }
+ const d = new Date();
+let year = d.getFullYear();
+
 function LoginPage(){     
     return(
         <div className="images" onLoad={changeImg()} >
@@ -32,6 +35,7 @@ function LoginPage(){
                     <input type="password" placeholder="Enter password" /><br /><br />
                     <Link to="/"><button type="submit">Login</button></Link>
                 </form>
+                <p>Copyright &#169; <Link id='copy' to="/">Travel Log </Link>  {year}</p>
             </div>
         </div>
     );

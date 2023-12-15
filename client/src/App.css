@@ -25,8 +25,9 @@ body{
   text-align: center;
 
 }
+
 body{
-  background-color: #f1f1f1;
+  background-image: url("../newAsserts/xv.jpg");
 }
 
 img{
@@ -44,5 +45,11 @@ img{
 .home{
   text-align: center;
 }
+ footer {
+  background-color: #333;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 5px;
+ }
 
 

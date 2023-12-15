@@ -1,5 +1,6 @@
 .images img{
   max-width: 60%;
+  box-shadow: -7px 0px 10px rgba(0, 0, 0, 0.6) ;
 }
 .images{
   padding: 2%;
@@ -8,13 +9,14 @@
   margin-left: 5%;
   margin-right: 3%;
   padding-bottom: 2%;
+ 
 }
  .loginForm{
   padding: 10em;
   text-align: center;
-  box-shadow: -7px 0px 10px rgba(0, 0, 0, 0.6) ;
+  box-shadow: -7px 0px 10px rgba(0, 0, 0, 0.8) ;
   background-color: white;
-  background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/photography.png);
+  background-image: url("../../newAsserts/tic-tac-toe.jpg");
  }
  .loginForm input{
   width: 180%;
@@ -34,4 +36,8 @@
 
  .loginForm button:hover {
   opacity: 0.8;
+}
+
+#copy{
+  color: inherit;
 }

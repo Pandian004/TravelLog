@@ -1,6 +1,10 @@
 import { Outlet, Link } from "react-router-dom";
 import logo from "../Logo.png";
 
+const d = new Date();
+let year = d.getFullYear();
+
+
 function Layout(){
     return(
         <div>
@@ -13,6 +17,12 @@ function Layout(){
             </nav>
 
             <Outlet />
+
+            <footer>
+                <div className="footer">
+                <p>Copyright  &#169; Travel Log & Bloggers {year} </p>
+                </div>
+            </footer>
         </div>
     );
 }

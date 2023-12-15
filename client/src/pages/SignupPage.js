@@ -8,6 +8,8 @@ let imgsrc;
 function changeImg(){
     imgsrc = imageList[Math.floor(Math.random()*imageList.length)];
   }
+  const d = new Date();
+  let year = d.getFullYear();
 function SignupPage(){
     return(
         <div className="signupForm" onLoad={changeImg()}>
@@ -21,6 +23,7 @@ function SignupPage(){
                     <input type='password' placeholder='Reapeat your password' /><br /><br />
                     <Link to="/"><button type='submit'>Sign Up</button></Link>
                 </form>
+                <p>Copyright &#169; <Link id='copy' to="/">Travel Log </Link>  {year}</p>
             </div>
         </div>
     );
