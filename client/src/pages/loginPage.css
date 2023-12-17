@@ -5,7 +5,7 @@
 .images{
   padding: 2%;
   display: flex;
-  margin-top: 4%;
+  margin-top: 3%;
   margin-left: 5%;
   margin-right: 3%;
   padding-bottom: 2%;
@@ -24,6 +24,7 @@
   margin-left: -45%;
   border: 1px groove #f1f1f1 ;
   border-radius: 10px;
+  font-family: 'Exo 2', sans-serif;
  }
 
  .loginForm button{
@@ -32,6 +33,7 @@
   border: 2px outset #f1f1f1;
   border-radius: 7px;
   background-image: linear-gradient(to bottom left,  #4568dc, #b06ab3);
+  font-family: 'Exo 2', sans-serif;
  }
 
  .loginForm button:hover {

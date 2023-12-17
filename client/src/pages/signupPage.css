@@ -21,6 +21,7 @@
     padding: 10px;
     border-radius: 10px;
     border: 1px groove #f1f1f1 ;
+    font-family: 'Exo 2', sans-serif;
 }
 .form button{
     width: 380px;
@@ -28,6 +29,7 @@
     border-radius: 10px;
     background-image: linear-gradient(to bottom left,  #4568dc, #b06ab3);
     border: 2px outset #f1f1f1;
+    font-family: 'Exo 2', sans-serif;
 }
 
 .form button:hover{
