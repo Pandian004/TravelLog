@@ -1,0 +1,39 @@
+.form-cnp input{
+    display: block;
+    width: 99.25%;
+    padding: 5px;
+   
+}
+
+.createNewPost{
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    box-shadow: -7px 7px 10px rgba(0, 0, 0, 0.4) ;
+}
+
+.header1{
+    text-align: center;
+}
+
+.form-cnp{
+   padding: 20px;
+}
+
+.form-cnp button{
+    display: flex;
+    align-items: center; 
+    gap: 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #333;
+}
+
+.PostButton{
+    width: 25px;
+    height: 25px;
+}
+
