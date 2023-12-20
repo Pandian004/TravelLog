@@ -21,7 +21,7 @@ function SignupPage(){
                     <input type='email' placeholder='Enter your email' /><br /><br />
                     <input type='password' placeholder='Create your password' /><br /><br />
                     <input type='password' placeholder='Reapeat your password' /><br /><br />
-                    <Link to="/"><button type='submit'>Sign Up</button></Link>
+                    <Link to="/"><button type='submit'><strong>Sign Up</strong></button></Link>
                 </form>
                 <p>Copyright &#169; <Link id='copy' to="/">Travel Log </Link>  {year}</p>
             </div>

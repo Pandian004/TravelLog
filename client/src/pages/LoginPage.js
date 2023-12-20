@@ -33,7 +33,7 @@ function LoginPage(){
                 <form>
                     <input type="email" placeholder="Enter email" /><br /><br />
                     <input type="password" placeholder="Enter password" /><br /><br />
-                    <Link to="/"><button type="submit">Login</button></Link>
+                    <Link to="/"><button type="submit"><strong>Login</strong></button></Link>
                 </form>
                 <p>Copyright &#169; <Link id='copy' to="/">Travel Log </Link>  {year}</p>
             </div>

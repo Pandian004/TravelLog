@@ -2,7 +2,7 @@ import Post from './Post'
 function Home(){
     return(
         <div className='home'>
-           <h1>Latest Posts</h1>
+           <h1>Latest blogs</h1>
            <div className="Posts">
                 <Post />
                 <Post />

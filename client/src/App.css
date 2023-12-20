@@ -40,6 +40,41 @@ img{
  border-radius: 10px;
 }
 
+@media screen and (max-width:800px){
+  .Post{
+    margin: 2% 10%;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width:600px){
+  .Post{
+    margin: 2% 5%;
+    padding: 5px;
+    margin-bottom: 15px;
+    font-size: 10px;
+  }
+
+  .Post img{
+    max-width: 70%;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width:362px){
+  .home h1{
+    font-size: medium;
+   
+  }
+
+  .likes {
+    width: 15px;
+    height: 15px;
+  }
+
+  
+}
+
 .home{
   text-align: center;
 }
@@ -50,4 +85,19 @@ img{
   padding: 5px;
  }
 
+.likes img{
+  width: 25px;
+  height: 25px;
+}
 
+.addFeature{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.likes{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}

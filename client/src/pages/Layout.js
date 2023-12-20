@@ -20,7 +20,7 @@ function Layout(){
 
             <footer>
                 <div className="footer">
-                <p>Copyright  &#169; Travel Log & Bloggers {year} </p>
+                <p>Copyright  &#169; Travel Log & Bloggers {year}. All rights reserved </p>
                 </div>
             </footer>
         </div>
