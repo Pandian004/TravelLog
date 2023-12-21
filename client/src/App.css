@@ -85,19 +85,14 @@ img{
   padding: 5px;
  }
 
-.likes img{
-  width: 25px;
-  height: 25px;
-}
 
 .addFeature{
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 
-.likes{
-  display: flex;
-  align-items: center;
-  gap: 15px;
+.profileIcon{
+  width: 25px;
+  height: 25px;
 }
