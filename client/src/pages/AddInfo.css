@@ -1,0 +1,54 @@
+.avatar-addInfo{
+    background-color:white;
+    padding: 15px;
+    margin: 7% 20%;
+    border-radius: 10px;
+    box-shadow: -7px 7px 10px rgba(0, 0, 0, 0.2) ;
+    text-align: center;
+    background-image: url("../../newAsserts/hypnotize.jpg");
+}
+
+.Avatar{
+    display: flex;  
+    gap: 70px;
+    align-items: center;
+    
+}
+
+.Info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Info input,textarea{
+    width: 250px;
+    padding: 5px;
+    font-family: 'Exo 2', sans-serif;
+    border-radius: 5px;
+    border: 1px groove grey;
+    gap: 15px;
+}
+
+.ProfilePic{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    margin: 2% 5%;
+    border-radius: 50%;
+}
+
+.Info button{
+    width: 260px;
+    padding: 5px;
+    background-image: linear-gradient(to bottom left,  #2193b0, #6dd5ed);
+    border-radius: 5px;
+    border: 1px groove grey;
+    cursor: pointer;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.Info button:hover{
+    opacity: 0.8;
+}

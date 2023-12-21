@@ -1,12 +1,6 @@
-import Blike from '../Blike.png';
-import Alike from '../Alike.png';
-import { useState } from 'react';
+import ProfilePic from '../Default_Profile_Pic.jpg'
 
 function Post(){
-    const [isLike, setIsLike] = useState(false),
-            [like, setLike] = useState(0);
-
- 
     return(
         <div className="Post">
             <h3>The Himalayas: Nature's Majestic Giants</h3>
@@ -18,13 +12,9 @@ function Post(){
             </div>
             <hr/>
             <div className="addFeature">
-                <div className="likes">
-                    <img src={isLike?Alike:Blike} alt='likes' onClick={()=>{setIsLike(!isLike);setLike(like+(isLike? -1:1))} }/>
-                    <p>{like} Likes</p>
-                </div>
-                <div className="author">
-                    <h5>Posted by: UserName</h5>
-                </div>
+                    <h5>Posted by: </h5>
+                    <img src={ProfilePic} alt='/'className='profileIcon'/>
+                    <h5>UserName</h5>
             </div>
            
         </div>

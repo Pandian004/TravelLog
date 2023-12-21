@@ -7,14 +7,16 @@ export default function CreateNewPost(){
        <div className="createNewPost">
         <h1 className='header1'>Write your story...</h1>
         <div className="form-cnp">
-            <input type="text" placeholder="Title" /><br/>
-            <label >Select a image</label>
-            <input type="file" /><br/>
-            <textarea placeholder='Summary of the blog..' className='summary' ></textarea><br/>
-            <ReactQuill /><br/>
-            <div className='PostButton'>
-                <button type="submit"><strong>Create Post</strong> </button>
-            </div>
+            <form>
+                <input type="text" placeholder="Title" required /><br/>
+                <label >Select a image</label>
+                <input type="file" required/><br/>
+                <textarea placeholder='Summary of the blog' className='summary' required rows={5} /><br/>
+                <ReactQuill /><br/>
+                <div className='PostButton'>
+                    <button type="submit"><strong>Create Post</strong> </button>
+                </div>
+            </form>
         </div>
        </div>
     );
