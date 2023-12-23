@@ -10,7 +10,7 @@ export default function CreateNewPost(){
             <form>
                 <input type="text" placeholder="Title" required /><br/>
                 <label >Select a image</label>
-                <input type="file" required/><br/>
+                <input type="file" required /><br/>
                 <textarea placeholder='Summary of the blog' className='summary' required rows={5} /><br/>
                 <ReactQuill /><br/>
                 <div className='PostButton'>
