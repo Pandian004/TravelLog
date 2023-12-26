@@ -61,4 +61,35 @@
   margin: 10% 30%;
   padding: 10px;
   border: 1px solid #888;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  background-image: url('../../newAsserts/hypnotize.jpg');
+}
+
+.modal-button{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 7px;
+}
+
+.modal-button button{
+    padding: 7px;
+    width: 25%;
+    border-radius: 10px;
+    border: 1px groove grey;
+    cursor: pointer;
+}
+
+.modal-button button:hover{
+    opacity: 0.8;
+}
+
+#confirmbtn{
+    background-color:  #00b300;
+}
+
+#cancelbtn{
+    background-color: #cc0000;
 }

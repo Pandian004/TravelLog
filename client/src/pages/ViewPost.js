@@ -16,10 +16,10 @@ function ViewPost(){
                     </div>
                     <div className="toolBar">
                        <Link to='/CreateNewPost' ><img src={Edit} alt='editButton' id='editButton'/></Link>
-                        <img src={Delete} alt='deleteButton' onClick={console.log("Image Clicked")} id='deleteButton'/>
+                        <img src={Delete} alt='deleteButton' onClick={() =>setShowModal(true)} id='deleteButton'/>
                     </div>
             </div>
-            {!showModal && 
+            {showModal && 
             <div className="modal" id="modal">
                 <div className="modal-content">
                     <div className="modal-header">
@@ -27,10 +27,10 @@ function ViewPost(){
                     </div>
                     <hr/>
                     <div className="modal-body">
-                        <p>Are you sure you want to delete this post?</p>
+                        <h4>Are you sure you want to delete this post?</h4>
                         <div className="modal-button">
                             <button type='submit' id='confirmbtn'>Confirm</button>
-                            <button type='submit' id='cancelbtn'>Cancel</button>
+                            <button type='submit' id='cancelbtn' onClick={() =>setShowModal(false)}>Cancel</button>
                         </div>
                     </div>
                 </div>
