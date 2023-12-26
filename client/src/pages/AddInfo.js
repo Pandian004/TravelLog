@@ -1,6 +1,6 @@
 import Avatar from 'react-avatar-edit';
 import './AddInfo.css';
-import ProfilePic from '../Default_Profile_Pic.jpg'
+import ProfilePic from '../AssertsNew/Default_Profile_Pic.jpg'
 import { useState} from 'react';
 import {Link} from 'react-router-dom';
 

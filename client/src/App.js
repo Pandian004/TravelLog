@@ -7,6 +7,7 @@ import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import CreateNewPost from './pages/CreateNewPost';
 import AddInfo from './pages/AddInfo';
+import ViewPost from './pages/ViewPost';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
+            <Route path='ViewPost' element={<ViewPost />} />
           </Route>
           <Route path='Profile' element={<Profile />} />
           <Route path='LoginPage' element={<LoginPage />} />
