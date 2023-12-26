@@ -1,4 +1,4 @@
-import ProfilePic from '../Default_Profile_Pic.jpg'
+import ProfilePic from '../AssertsNew/Default_Profile_Pic.jpg'
 import AddButton from '../plus.svg';
 import './Profile.css'
 import {Link} from 'react-router-dom';

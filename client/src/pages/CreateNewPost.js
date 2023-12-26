@@ -5,7 +5,7 @@ import './CreateNewPost.css';
 export default function CreateNewPost(){
     return(
        <div className="createNewPost">
-        <h1 className='header1'>Write your story...</h1>
+        <h1 className='header1'>Share your experience...</h1>
         <div className="form-cnp">
             <form>
                 <input type="text" placeholder="Title" required /><br/>
