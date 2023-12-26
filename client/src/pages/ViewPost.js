@@ -2,8 +2,11 @@ import './ViewPost.css'
 import ProfilePic from '../AssertsNew/Default_Profile_Pic.jpg'
 import Edit from '../AssertsNew/edit.png'
 import Delete from '../AssertsNew/delete.png'
+import {Link} from 'react-router-dom'
+import { useState } from 'react'
 
 function ViewPost(){
+    const [showModal, setShowModal] = useState(false);
     return(
         <div className="ViewPost">
             <div className="author-ViewPost">
@@ -12,10 +15,27 @@ function ViewPost(){
                         <h3>UserName</h3>
                     </div>
                     <div className="toolBar">
-                        <img src={Edit} alt='editButton' id='editButton'/>
-                        <img src={Delete} alt='deleteButton' id='deleteButton'/>
+                       <Link to='/CreateNewPost' ><img src={Edit} alt='editButton' id='editButton'/></Link>
+                        <img src={Delete} alt='deleteButton' onClick={console.log("Image Clicked")} id='deleteButton'/>
                     </div>
             </div>
+            {!showModal && 
+            <div className="modal" id="modal">
+                <div className="modal-content">
+                    <div className="modal-header">
+                        <h1>Deleting post</h1>
+                    </div>
+                    <hr/>
+                    <div className="modal-body">
+                        <p>Are you sure you want to delete this post?</p>
+                        <div className="modal-button">
+                            <button type='submit' id='confirmbtn'>Confirm</button>
+                            <button type='submit' id='cancelbtn'>Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
             <hr />
             <div className="title-ViewPost">
                 <h1>The Himalayas: Nature's Majestic Giants</h1>
@@ -25,48 +45,50 @@ function ViewPost(){
             </div>
             <div className="blogContent-ViewPost">
                 <p>
-                    The Himalayas: a majestic realm that captures the imagination, a region that encapsulates both spiritual tranquility and 
-                    breathtaking natural beauty. Stretching over 1,500 miles across five countries—India, Nepal, Bhutan, China, and Pakistan—the 
-                    Himalayas are not just a mountain range; they are a symbol of resilience, spirituality, and natural wonder.
+                    Embarking on a journey through the Himalayas is akin to stepping into a world where nature's magnificence knows no bounds. As a 
+                    traveler, I found myself captivated by the allure of these colossal peaks, drawn to the promise of adventure, spirituality, 
+                    and unparalleled beauty.
                 </p>
 
-                <h2>Awe-Inspiring Majesty</h2>
+                <h2>Embracing the Majesty</h2>
                 <p>
-                    The Himalayas, home to some of the world's tallest peaks, including the awe-inspiring Mount Everest, stand tall as nature's 
-                    masterpiece. The range is adorned with a stunning diversity of landscapes, from snow-capped peaks piercing the sky to lush valleys 
-                    teeming with life. The play of light on these colossal mountains at sunrise and sunset creates a spectacle that words can barely 
-                    capture.
+                    Standing amidst the Himalayas, gazing at peaks that touch the sky, I felt an overwhelming sense of insignificance and wonder. 
+                    The sheer scale of these mountains, from the iconic Mount Everest to the lesser-known gems, left me breathless. The play of light
+                    on the snow-capped summits during sunrise and sunset was a sight that etched itself into my memory forever.
                 </p>
 
-                <h2>Spiritual Sanctuary</h2>
-                <p>For centuries, the Himalayas have been a sanctuary for spiritual seekers. The region is steeped in religious and cultural 
-                    significance, with ancient monasteries, temples, and sacred sites dotting its expanse. The tranquil ambiance fosters introspection 
-                    and draws pilgrims and seekers from around the globe, seeking solace and enlightenment amidst the serene surroundings.
+                <h2>A Spiritual Sojourn</h2>
+                <p>
+                    As I traversed through ancient monasteries and revered temples nestled in the Himalayan valleys, I discovered a serene sanctuary
+                    for the soul. The tranquility of these sacred sites, adorned with prayer flags fluttering in the mountain breeze, invited 
+                    introspection and a sense of profound peace. The spirituality woven into the very fabric of this land resonated deeply within me.
                 </p>
 
-                <h2>Biodiversity Hotspot</h2>
-                <p>Beyond its towering peaks, the Himalayas harbor an incredible array of biodiversity. The diverse ecosystems support a wide variety 
-                    of flora and fauna, some of which are endemic to this region. Rare species like the snow leopard, red panda, and Himalayan blue 
-                    poppy find their home in these mountains, emphasizing the importance of conservation efforts to protect this unique ecosystem.
+                <h2>Exploring Nature's Bounty</h2>
+                <p>Each step along the trekking trails revealed a diverse tapestry of ecosystems. From dense forests teeming with life to high-altitude 
+                    meadows painted with vibrant wildflowers, the Himalayas offered a glimpse into nature's abundance. Spotting elusive wildlife like 
+                    the graceful snow leopard and encountering the unique flora was an experience that made me appreciate the delicate balance of these 
+                    ecosystems.
                 </p>
 
-                <h2>Adventure Playground</h2>
-                <p>For adventure enthusiasts, the Himalayas offer an unparalleled playground. Trekking trails wind through picturesque landscapes, 
-                    inviting hikers to explore hidden valleys and witness panoramic vistas. Mountaineers test their limits on challenging peaks, while 
-                    thrill-seekers indulge in activities like white-water rafting, paragliding, and skiing, making it a haven for adrenaline junkies.
+                <h2>Adventure Unleashed</h2>
+                <p>
+                    The Himalayas, a playground for thrill-seekers, beckoned with its array of adrenaline-pumping activities. Trekking along challenging 
+                    paths, rafting through roaring rivers, and feeling the rush of paragliding amidst panoramic landscapes—the adventure here knows 
+                    no bounds. Each escapade was a testament to both personal strength and the untamed beauty of this region.
                 </p>
 
-                <h2>Challenges and Conservation</h2>
-                <p>However, this ethereal beauty faces numerous challenges. Climate change poses a significant threat, melting glaciers and altering 
-                    the delicate balance of ecosystems. Human activities, including deforestation and pollution, endanger the region's biodiversity.
-                     Sustainable practices and conservation efforts are crucial to preserve the Himalayas for future generations.
+                <h2>Preserving a Treasure</h2>
+                <p>
+                    However, amidst the awe-inspiring beauty lay the looming threats of climate change and human impact. Witnessing the 
+                    receding glaciers and understanding the fragility of this ecosystem reinforced the urgency of conservation efforts. It became 
+                    clear that responsible travel and sustainable practices are imperative to safeguard this natural wonder for generations to come.
                 </p>
 
                 <h2>Conclusion</h2>
-                <p>The Himalayas stand as a testament to nature's grandeur, a place that inspires, humbles, and invites exploration. Whether you seek 
-                    adventure, spiritual solace, or simply wish to bask in the awe-inspiring beauty of nature, the Himalayas offer an experience that 
-                    leaves an indelible mark on the soul. As we cherish and protect this natural marvel, may its magnificence continue to captivate 
-                    and inspire all who behold its splendor.
+                <p>The Himalayas, with their blend of magnificence and serenity, have left an indelible mark on my journey. They are more than a 
+                    destination; they are a testament to nature's grandeur and resilience. As I bid farewell to these majestic peaks, I carry with 
+                    me not just memories but a profound appreciation for the delicate balance of our planet's treasures.
                 </p>
             </div>
             <hr/>
