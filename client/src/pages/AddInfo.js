@@ -32,7 +32,7 @@ function AddInfo(){
                     <form>
                         <input type='text' placeholder='Pick a Username ' required/><br/><br/>
                         <textarea placeholder='About yourself...(Optional)' rows={5} /><br/>
-                        <Link to="/"> <button type='submit'><strong>Done</strong></button></Link>
+                        <Link to="/"> <button type='submit'><strong>Update</strong></button></Link>
                     </form>
                 </div>
             </div>
