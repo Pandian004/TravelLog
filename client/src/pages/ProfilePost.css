@@ -1,0 +1,27 @@
+.ProfilePost{
+    margin: 25px;
+    width: 320px;
+    background-color: white;
+    box-shadow: -7px 7px 10px rgba(0, 0, 0, 0.4) ;
+}
+
+.ProfilePost:hover{
+    width: 310px;
+    opacity: 0.9;
+    box-shadow: -7px 7px 10px rgba(0, 0, 0, 0.7) ;
+}
+
+.ProfilePost img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.ProfilePost h3{
+    text-align: center;
+}
+
+#link-profilepost{
+    text-decoration: none;
+    color: black;
+}

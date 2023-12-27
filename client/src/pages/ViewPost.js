@@ -1,5 +1,6 @@
 import './ViewPost.css'
 import ProfilePic from '../AssertsNew/Default_Profile_Pic.jpg'
+import Demo from '../AssertsNew/DemoPic.jpg'
 import Edit from '../AssertsNew/edit.png'
 import Delete from '../AssertsNew/delete.png'
 import {Link} from 'react-router-dom'
@@ -41,7 +42,7 @@ function ViewPost(){
                 <h1>The Himalayas: Nature's Majestic Giants</h1>
             </div>
             <div className="image-ViewPost">
-                <img src="https://images.pexels.com/photos/5431372/pexels-photo-5431372.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Himalayas" width={450} height={313} />
+                <img src={Demo} alt="Himalayas" width={800} height={450} />
             </div>
             <div className="blogContent-ViewPost">
                 <p>

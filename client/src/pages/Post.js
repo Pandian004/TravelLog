@@ -1,4 +1,5 @@
 import ProfilePic from '../AssertsNew/Default_Profile_Pic.jpg'
+import Demo from '../AssertsNew/DemoPic.jpg'
 import {Link} from 'react-router-dom';
 
 function Post(){
@@ -6,7 +7,7 @@ function Post(){
         <div className="Post">
             <h3>The Himalayas: Nature's Majestic Giants</h3>
             <div className="images1">
-                <img src="https://images.pexels.com/photos/5431372/pexels-photo-5431372.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Himalayas" width={450} height={313} />
+                <img src={Demo} alt="Himalayas" width={450} height={313} />
             </div>
             <div className="content">
                 <p>

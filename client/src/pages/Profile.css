@@ -44,3 +44,17 @@
     width: 52px;
     opacity: 0.9;
 }
+
+#below-yourPost{
+    width: 75%;
+    border: 1px solid #333;
+}
+
+.post-profile{
+    margin: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}

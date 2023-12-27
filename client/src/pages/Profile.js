@@ -1,7 +1,8 @@
-import ProfilePic from '../AssertsNew/Default_Profile_Pic.jpg'
+import ProfilePic from '../AssertsNew/Default_Profile_Pic.jpg';
 import AddButton from '../plus.svg';
 import './Profile.css'
 import {Link} from 'react-router-dom';
+import ProfilePost from './ProfilePost';
 
 function Profile(){
     return(
@@ -20,16 +21,23 @@ function Profile(){
                     </div>
                     <div className="ProfileInfo">
                         <p>Joined on : 19th dec 2023</p>
-                        <p>No.of blogs: 03</p>
+                        <p>No.of blogs: 06</p>
                     </div>
             </div>
             <div className="display-post">
                 <h2 className='yourPosts'>Your blogs</h2>
+                <hr id='below-yourPost'/>
                 <div className="addbtn">
                     <Link to='/CreateNewPost'><img src={AddButton} alt='AddButton' className='AddButton' /></Link>
                 </div>
 
-                <div className="post">
+                <div className="post-profile">
+                    <ProfilePost/>
+                    <ProfilePost/>
+                    <ProfilePost/>
+                    <ProfilePost/>
+                    <ProfilePost/>
+                    <ProfilePost/>
                 </div>
                 
             </div>
