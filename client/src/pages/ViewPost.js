@@ -23,14 +23,14 @@ function ViewPost(){
             <div className="modal" id="modal">
                 <div className="modal-content">
                     <div className="modal-header">
-                        <h1>Deleting post</h1>
+                        <h1>Delete post</h1>
                     </div>
                     <hr/>
                     <div className="modal-body">
-                        <h4>Are you sure you want to delete this post?</h4>
+                        <p>Are you sure you want to delete this post?</p>
                         <div className="modal-button">
-                            <button type='submit' id='confirmbtn'>Confirm</button>
-                            <button type='submit' id='cancelbtn' onClick={() =>setShowModal(false)}>Cancel</button>
+                            <button type='submit' id='confirmbtn'><strong>Confirm</strong></button>
+                            <button type='submit' id='cancelbtn' onClick={() =>setShowModal(false)}><strong>Cancel</strong></button>
                         </div>
                     </div>
                 </div>

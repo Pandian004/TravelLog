@@ -22,6 +22,7 @@
 
 .profileIcon-ViewPost{
     width: 60px;
+    border-radius: 50%;
 }
 
 .toolBar, .authorInfo{
@@ -80,6 +81,7 @@
     border-radius: 10px;
     border: 1px groove grey;
     cursor: pointer;
+    font-family: 'Exo 2', sans-serif;
 }
 
 .modal-button button:hover{
@@ -87,9 +89,13 @@
 }
 
 #confirmbtn{
-    background-color:  #00b300;
+    background-image: linear-gradient(to bottom left, #56ab2f,   #0f9b0f);
 }
 
 #cancelbtn{
-    background-color: #cc0000;
+    background-image: linear-gradient(to bottom left,  #e52d27, #b31217);
+}
+
+.modal-body p{
+    font-size: 23px;
 }
