@@ -44,3 +44,41 @@
 #copy{
   color: inherit;
 }
+
+@media screen and (max-width:1225px) {
+  .loginForm input{
+    width: 170%;
+    padding: 15px;
+    margin-left: -45%;
+    border: 1px groove #f1f1f1 ;
+    border-radius: 10px;
+    font-family: 'Exo 2', sans-serif;
+   }
+}
+
+@media screen and (max-width:900px) {
+  .images img{
+    visibility: hidden;
+    max-width: 0%;
+  }
+
+  .images{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+
+  .loginForm{
+    align-items: center;
+    padding: 15%;
+    box-shadow: -7px 7px 10px rgba(0, 0, 0, 0.4) ;
+    margin: 10%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .loginForm button{
+    padding: 7px;
+  }
+}
