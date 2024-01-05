@@ -1,5 +1,6 @@
 import ProfilePic from '../AssertsNew/Default_Profile_Pic.jpg'
 import Demo from '../AssertsNew/DemoPic.jpg'
+import ReadMore from '../AssertsNew/share.png'
 import {Link} from 'react-router-dom';
 
 function Post(){
@@ -16,8 +17,8 @@ function Post(){
                     Revered as sacred by many cultures, the Himalayas embody both spiritual significance and breathtaking beauty. Offering adventure to 
                     trekkers and solace to seekers, they inspire awe and humility. Home to unique wildlife and diverse communities, these towering giants 
                     are a testament to nature's grandeur. The Himalayas, a testament to the sublime power and mystique of our natural world. 
-                    <Link id='read-more' to='/ViewPost'> Read more</Link>
-                    </p>
+                    <Link id='read-more' to='/ViewPost'>Read more <img src={ReadMore} alt='/'/> </Link>
+                </p>
             </div>
             <hr/>
             <div className="addFeature">

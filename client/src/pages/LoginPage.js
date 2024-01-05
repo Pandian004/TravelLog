@@ -18,12 +18,8 @@ function LoginPage(){
             <div className='loginForm'>
                 <h3>Welcome back, Traveller!</h3>
                 <form>
-                    <div>
-                        <input type="email" placeholder="Enter email" required /><br /><br />
-                    </div>
-                    <div>
-                        <input type='password' placeholder="Enter password" required /> <br /><br />
-                    </div>
+                    <input type="email" placeholder="Enter email" required />
+                    <input type='password' placeholder="Enter password" required /> 
                     <Link to="/"><button type="submit"><strong>Login</strong></button></Link>
                 </form>
                 <p>Copyright &#169; <Link id='copy' to="/">Travel Log </Link>  {year}</p>

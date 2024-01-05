@@ -58,15 +58,17 @@ img{
   }
 }
 
-@media screen and (max-width:362px){
+@media screen and (max-width:430px){
   .home h1{
-    font-size: medium;
+    font-size:25px;
    
   }
+  .content p{
+    font-size: 10px;
+  }
 
-  .likes {
-    width: 15px;
-    height: 15px;
+  .Post h3{
+    font-size: 20px;
   }
 
   
@@ -100,4 +102,9 @@ img{
 
 #read-more{
   text-decoration: none;
+  color: rgb(0, 68, 194);
+}
+
+#read-more img{
+  width: 15px;
 }

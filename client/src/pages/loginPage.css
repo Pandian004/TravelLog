@@ -45,6 +45,12 @@
   color: inherit;
 }
 
+.loginForm form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 @media screen and (max-width:1225px) {
   .loginForm input{
     width: 170%;
@@ -60,6 +66,7 @@
   .images img{
     visibility: hidden;
     max-width: 0%;
+    display: none;
   }
 
   .images{
@@ -76,9 +83,32 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+    gap: 15px;
   }
 
   .loginForm button{
     padding: 7px;
   }
+
+  .loginForm input{
+    width: 130%;
+    padding: 15px;
+    margin-left: -45%;
+    border: 1px groove #f1f1f1 ;
+    border-radius: 10px;
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    margin-left: -37px;
+   }
+
+   .loginForm form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+   }
+
+   .loginForm h3, p{
+    font-size: 15px;
+   }
 }
