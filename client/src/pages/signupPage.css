@@ -17,10 +17,10 @@
 }
 
 .form input{
-    width: 360px;
+    width: 380px;
     padding: 10px;
     border-radius: 10px;
-    border: 1px groove #f1f1f1 ;
+    border: 2px groove #f1f1f1 ;
     font-family: 'Exo 2', sans-serif;
 }
 .form button{
