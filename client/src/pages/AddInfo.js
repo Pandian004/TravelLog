@@ -26,7 +26,7 @@ function AddInfo(){
                         <div className="modal-content-Update">
                             <Avatar 
                                 height={400}
-                                width={570}
+                                width={600}
                                 imageHeight={400}
                                 label={"Select a profile photo"}
                                 onCrop={onCrop}
