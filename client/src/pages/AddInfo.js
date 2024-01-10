@@ -39,11 +39,14 @@ function AddInfo(){
                 }
                 <div className="Info" onClick={() => {setExist(exist)}}>
                     <form>
-                        {exist?<h4 id='Warning'>* Username already exist</h4>:" "}
                         <input type='text' placeholder='Pick a Username ' required/>
                         <textarea placeholder='About yourself...(Optional)' rows={5} />
                         <Link to="/"> <button type='submit'><strong>Update</strong></button></Link>
                     </form>
+                   
+                </div>
+                <div className="warning">
+                    {exist?<h4 id='Warning'>* Username already exist</h4>:" "}
                 </div>
             </div>
         </div>

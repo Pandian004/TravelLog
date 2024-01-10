@@ -92,4 +92,6 @@
 
 #Warning{
     color: red;
+    position: absolute;
+    top: 34%;
 }
