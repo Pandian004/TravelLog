@@ -13,7 +13,7 @@ let imgsrc = imageList[5];
   let year = d.getFullYear();
 function SignupPage(){
 
-    const[username, setUsername] = useState('');
+    const[name, setName] = useState('');
     const[email, setEmail] = useState('');
     const[password, setPassword] = useState('');
 
@@ -22,7 +22,7 @@ function SignupPage(){
 
         await fetch("http://localhost:4000/signup", {
             method: "POST",
-            body: JSON.stringify({username, email, password}),
+            body: JSON.stringify({name, email, password}),
             headers:{'Content-Type':'application/json'}
         })
     }
@@ -36,8 +36,8 @@ function SignupPage(){
                     <input 
                         type='text' 
                         placeholder='Enter your name' 
-                        value={username}
-                        onChange={ev => setUsername(ev.target.value)}
+                        value={name}
+                        onChange={ev => setName(ev.target.value)}
                         required 
                     /><br /><br />
                     <input 
