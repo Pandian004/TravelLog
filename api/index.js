@@ -1,21 +1,26 @@
 const express = require('express');
 const cors = require('cors');
+const  mongoose  = require('mongoose');
 const app = express();
+const User = require('./models/User');
 
 app.use(express.json());
 app.use(cors());
-app.post('/signup', (req, res) => {
-    // const name = JSON.parse(req.body.name);
-    // const email = req.body.email;
-    // const password = req.body.password;
-    // res.json(
-    //     `Name:${name} 
-    //      Email:${email} 
-    //      Password:${password}`
-    // );
-    // res.json(`Email:${email}`);
-    // res.json(`Password:${password}`);
-    res.json(req.body);
+
+mongoose.connect("mongodb+srv://travellog:hrXDjQckHE4cFVBH@cluster0.2kvasoc.mongodb.net/?retryWrites=true&w=majority");
+
+app.post('/signup', async (req, res) => {
+    const{name,email, password} = req.body;
+   try{
+    const UserDoc = await User.create({name,email,password});
+    res.json(UserDoc);
+   }
+   catch(e){
+    res.status(400).json(e);
+   }
 });
 
 app.listen(4000);
+//hrXDjQckHE4cFVBH
+
+// mongodb+srv://travellog:hrXDjQckHE4cFVBH@cluster0.2kvasoc.mongodb.net/?retryWrites=true&w=majority

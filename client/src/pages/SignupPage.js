@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import'./signupPage.css';
 import {Link} from 'react-router-dom'
+import axios from 'axios';
 
 const images = require.context('../../asserts',true);
 const imageList = images.keys().map(image => images(image));
@@ -19,12 +20,22 @@ function SignupPage(){
 
     async function register(ev){
         ev.preventDefault();
-
-        await fetch("http://localhost:4000/signup", {
-            method: "POST",
-            body: JSON.stringify({name, email, password}),
-            headers:{'Content-Type':'application/json'}
+        
+        axios({
+            method: 'post',
+            url: 'http://localhost:4000/signup',
+            data: {
+              name,
+              email,
+              password
+            }
+          })
+        .then(function (response) {
+            console.log(response);
         })
+        .catch(function (error) {
+            console.log(error);
+        });
     }
 
     return(
