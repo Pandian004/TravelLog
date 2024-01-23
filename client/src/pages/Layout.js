@@ -13,6 +13,7 @@ function Layout(){
                 <ul>
                     <li><Link id="link" to="/LoginPage">Login</Link></li>
                     <li><Link id="link1" to="/SignupPage">Sign up</Link></li>
+                    {/* <li><Link id="link" to="/Profile">Profile(Demo purpose)</Link></li> */}
                 </ul>
             </nav>
 
