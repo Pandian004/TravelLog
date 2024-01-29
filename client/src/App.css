@@ -77,13 +77,41 @@ img{
 .home h1{
   text-align: center;
 }
+
+/* .socials{
+  background-color: #f1f1f1;;
+} */
+
  footer {
   background-color: #333;
   color: #f1f1f1;
   text-align: center;
   padding: 5px;
+  display: flex;
+  justify-content:space-between;
  }
 
+ .footer{
+  flex-grow: 5;
+ }
+
+
+ .footerImage img{
+    width: 200px;
+    height: 200px;
+ }
+
+ .footer-start h3{
+  font-size: 30px;
+ }
+
+ .socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+ }
 
 .addFeature{
   display: flex;
