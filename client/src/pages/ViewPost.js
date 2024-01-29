@@ -16,8 +16,8 @@ function ViewPost(){
                         <h3>UserName</h3>
                     </div>
                     <div className="toolBar">
-                       <Link to='/CreateNewPost' ><img src={Edit} alt='editButton' id='editButton'/></Link>
-                        <img src={Delete} alt='deleteButton' onClick={() =>setShowModal(true)} id='deleteButton'/>
+                       <Link to='/CreateNewPost' ><img title='Edit this post' src={Edit} alt='editButton' id='editButton'/></Link>
+                        <img title='Delete this post' src={Delete} alt='deleteButton' onClick={() =>setShowModal(true)} id='deleteButton'/>
                     </div>
             </div>
             {showModal && 
