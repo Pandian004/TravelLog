@@ -87,30 +87,18 @@ img{
   color: #f1f1f1;
   text-align: center;
   padding: 5px;
-  display: flex;
-  justify-content:space-between;
- }
-
- .footer{
-  flex-grow: 5;
- }
-
-
- .footerImage img{
-    width: 200px;
-    height: 200px;
- }
-
- .footer-start h3{
-  font-size: 30px;
  }
 
  .socials{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
   cursor: pointer;
+ }
+
+ .footer-end p{
+  font-size: 15px;
  }
 
 .addFeature{
