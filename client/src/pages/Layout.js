@@ -23,14 +23,13 @@ function Layout(){
             <Outlet />
 
             <footer>
-                <h1>Travel Log</h1>
-                <div className="socials">
-                    <a href="https://www.facebook.com"><img src={facebook} alt="facebook"  width={30} /></a>
-                    <a href="https://www.instagram.com"><img src={instagram} alt="facebook" width={30} /></a>
-                    <a href="https://www.twitter.com"><img src={twitterX} alt="facebook" width={30} /></a>
-                </div>
                 <div className="footer-end">
                     <p>Copyright  &#169; Travel Log & Bloggers 2023 - {year}. All rights reserved </p>
+                </div>
+                <div className="socials">
+                    <a href="https://www.facebook.com"><img src={facebook} alt="facebook" id="facebook" className="icon" /></a>
+                    <a href="https://www.instagram.com"><img src={instagram} alt="facebook"className="icon" /></a>
+                    <a href="https://www.twitter.com"><img src={twitterX} alt="facebook" className="icon" /></a>
                 </div>
             </footer>
         </div>

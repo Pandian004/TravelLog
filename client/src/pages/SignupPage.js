@@ -21,19 +21,22 @@ function SignupPage(){
     async function register(ev){
         ev.preventDefault();
         
-        axios({
-            method: 'post',
-            url: 'http://localhost:4000/signup',
-            data: {
-              name,
-              email,
-              password
-            }
+        // await fetch("http://localhost/4000/signup",{
+        //     method:"POST",
+        //     body: JSON.stringify({name, email, password}),
+        //     headers:{'content-type':'application/json'},
+        // })
+        axios.post('http://localhost:4000/signup',{
+              name:name,
+              email:email,
+              password:password
           })
         .then(function (response) {
+            alert("Registration successful");
             console.log(response);
         })
         .catch(function (error) {
+            alert("Registration failed")
             console.log(error);
         });
     }
