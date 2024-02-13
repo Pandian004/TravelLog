@@ -15,6 +15,7 @@ let imgsrc = imageList[5];
 function SignupPage(){
 
     const[name, setName] = useState('');
+    const[userName, setUserName] = useState('');
     const[email, setEmail] = useState('');
     const[password, setPassword] = useState('');
 
@@ -27,16 +28,17 @@ function SignupPage(){
         //     headers:{'content-type':'application/json'},
         // })
         axios.post('http://localhost:4000/signup',{
-              name:name,
-              email:email,
-              password:password
+            name:name,
+            username:userName,
+            email:email,
+            password:password
           })
         .then(function (response) {
             alert("Registration successful");
             console.log(response);
         })
         .catch(function (error) {
-            alert("Registration failed")
+            alert("Registration failed. Try to change username or email/ try agian later")
             console.log(error);
         });
     }
@@ -52,6 +54,13 @@ function SignupPage(){
                         placeholder='Enter your name' 
                         value={name}
                         onChange={ev => setName(ev.target.value)}
+                        required 
+                    /><br /><br />
+                    <input 
+                        type='text' 
+                        placeholder='Enter your username' 
+                        value={userName}
+                        onChange={ev => setUserName(ev.target.value)}
                         required 
                     /><br /><br />
                     <input 

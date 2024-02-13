@@ -12,12 +12,12 @@ const corsOption = {
 }
 app.use(cors(corsOption));
 
-mongoose.connect("mongodb+srv://travellog:hrXDjQckHE4cFVBH@cluster0.2kvasoc.mongodb.net/?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://travellog:39Y6du6G17JdD5as@cluster0.l6tif6p.mongodb.net/?retryWrites=true&w=majority");
 
 app.post('/signup', async (req, res) => {
-    const{name, email, password} = req.body;
+    const{name,username, email, password} = req.body;
    try{
-    const UserDoc = await User.create({name,email,password});
+    const UserDoc = await User.create({name,username,email,password});
     res.json(UserDoc);
    }
    catch(e){
@@ -27,6 +27,7 @@ app.post('/signup', async (req, res) => {
 
 
 app.listen(4000);
-//hrXDjQckHE4cFVBH
+//39Y6du6G17JdD5as
 
-// mongodb+srv://travellog:hrXDjQckHE4cFVBH@cluster0.2kvasoc.mongodb.net/?retryWrites=true&w=majority
+// mongodb+srv://travellog:39Y6du6G17JdD5as@cluster0.l6tif6p.mongodb.net/?retryWrites=true&w=majority
+
