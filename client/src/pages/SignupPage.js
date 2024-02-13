@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import'./signupPage.css';
-import {Link} from 'react-router-dom'
+import {Link, Navigate} from 'react-router-dom'
 import axios from 'axios';
 
 const images = require.context('../../asserts',true);
@@ -18,15 +18,10 @@ function SignupPage(){
     const[userName, setUserName] = useState('');
     const[email, setEmail] = useState('');
     const[password, setPassword] = useState('');
+    const[redirect, setRedirect] = useState(false);
 
     async function register(ev){
         ev.preventDefault();
-        
-        // await fetch("http://localhost/4000/signup",{
-        //     method:"POST",
-        //     body: JSON.stringify({name, email, password}),
-        //     headers:{'content-type':'application/json'},
-        // })
         axios.post('http://localhost:4000/signup',{
             name:name,
             username:userName,
@@ -35,6 +30,7 @@ function SignupPage(){
           })
         .then(function (response) {
             alert("Registration successful");
+            setRedirect(true);
             console.log(response);
         })
         .catch(function (error) {
@@ -43,6 +39,9 @@ function SignupPage(){
         });
     }
 
+    if(redirect){
+        return <Navigate to ={'/'} />    
+    }
     return(
         <div className="signupForm" >
             <img src={imgsrc} alt="pic"/>
