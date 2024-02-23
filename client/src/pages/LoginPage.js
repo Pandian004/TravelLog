@@ -3,6 +3,7 @@ import './loginPage.css';
 import { useState } from 'react';
 import axios from 'axios';
 
+axios.defaults.withCredentials = true;
 const images = require.context('../../LoginPhotos',true);
 const imageList = images.keys().map(image => images(image));
 
@@ -26,12 +27,15 @@ function LoginPage(){
             password:password
         })
         .then(function(response){
-            alert("Login successful");
-            setRedirect(true);
             console.log(response);
+          if(response.data){
+            setRedirect(true);
+            alert('Login successful');
+          }
+           
         })
         .catch(function (error) {
-            alert("login failed")
+            alert("Wrong password");
             console.log(error);
         });
     }
